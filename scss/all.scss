@@ -58,12 +58,7 @@ html {
 	line-height: 1.63;
 	margin: 0 0 18px 0;
 }
-.more {
-	font-stretch: condensed;
-	color: #0c0c0c;
-	font-size: 16px;
-	font-weight: 500;
-}
+
 .container {
 	margin: 0 auto;
 	max-width: 992px;
@@ -78,30 +73,42 @@ html {
 		padding:0 23px;
 	}
 }
+.more {
+	font-stretch: condensed;
+	color: #0c0c0c;
+	font-size: 16px;
+	font-weight: 500;
+	border-bottom: 2px dashed #0c0c0c;
+	padding: 5px 0;
+}
 .sidebar-box {
     max-height: 391px;
     position: relative;
     overflow: hidden;
 	&.active {
 		max-height: none;
-		 overflow: 	visible;
+		overflow: 	visible;
 	}
 	@include to992 {
 		max-height: 290px;
 	}
 }
-.sidebar-box .read-more {
+.more-arrow {
+padding-left: 10px;
+}
+.read-more {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	margin: 0;
+	padding: 10px 0;
 	.button {
-		padding: 10px 0;
 		cursor: pointer;
 	}
 /* "transparent" only works here because == rgba(0,0,0,0) */
-background-image: linear-gradient(to bottom, transparent, white);
+// background-image: linear-gradient(to bottom, transparent, white);
+background-color: #fff;
 }
 .header {
 	position: absolute;
