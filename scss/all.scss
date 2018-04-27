@@ -30,7 +30,7 @@ html {
   		content:'';
 		position: absolute;
 		top: 50%;
-		left: -21px;
+		left: -23px;
 		width: 8px;
 		height: 49px;
 		background-color: #101010;
@@ -56,7 +56,7 @@ html {
 	font-size: 16px;
 	color: #0c0c0c;
 	line-height: 1.63;
-	margin: 0 0 32px 0;
+	margin: 0 0 18px 0;
 }
 .more {
 	font-stretch: condensed;
@@ -76,7 +76,7 @@ html {
 		max-width:768px;
 	}
 	@include to768 {
-		padding:0 21px;
+		padding:0 23px;
 	}
 }
 .sidebar-box {
@@ -202,14 +202,14 @@ background-image: linear-gradient(to bottom, transparent, white);
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 760px;
+		height: 100vh;
 		position: relative;
-		@include to992 {
-			height: 680px;
-		}
-		@include to480 {
-			height: 590px;
-		}
+		// @include to992 {
+		// 	height: 680px;
+		// }
+		// @include to480 {
+		// 	height: 590px;
+		// }
 	}
 	&__brend {
 		width: 415px;
@@ -465,9 +465,8 @@ background-image: linear-gradient(to bottom, transparent, white);
 		}
     }
     &__content {
-    	height: 500px;
+    	height: 535px;
     	background-color: #fff;
-    	width: 90%;
     	border-radius: 5px;
     	display: flex;
     	position: relative;
@@ -512,4 +511,57 @@ background-image: linear-gradient(to bottom, transparent, white);
 }
 .popup1.active,.popup2.active,.popup3.active {
 	display: block;
+}
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  width: 136px;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+}
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #34495e;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #9AB999;
+}
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
 }
