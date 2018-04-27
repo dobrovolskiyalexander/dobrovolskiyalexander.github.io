@@ -16,7 +16,7 @@ html {
 }
 body {
 	background-image: url("../images/bg-body.png");
-	background-position: -220% 86%;
+	background-position: 838px 86%;
 	background-repeat: no-repeat;
 }
 .clearfix::after {
@@ -205,9 +205,16 @@ background-color: #fff;
 	}
 	&__wrapper-logo {
 		display: none;
+		img{
+			width: 100%;
+		}
 		@include to768 {
 			display: block;
 		}
+		@include to640 {
+			width: 45px;
+		}
+
 	}
 	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
 		background: #fff;

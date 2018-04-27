@@ -4225,7 +4225,7 @@ html {
 
 body {
   background-image: url("../images/bg-body.png");
-  background-position: -220% 86%;
+  background-position: 838px 86%;
   background-repeat: no-repeat; }
 
 .clearfix::after {
@@ -4414,9 +4414,14 @@ body {
         display: block; } }
   .header__wrapper-logo {
     display: none; }
+    .header__wrapper-logo img {
+      width: 100%; }
     @media only screen and (max-width: 785px) {
       .header__wrapper-logo {
         display: block; } }
+    @media only screen and (max-width: 657px) {
+      .header__wrapper-logo {
+        width: 45px; } }
   .header .hamburger-inner, .header .hamburger-inner::before, .header .hamburger-inner::after {
     background: #fff; }
   .header__drop {
