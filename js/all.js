@@ -3,6 +3,10 @@ $(document).ready(function() {
      $(".sidebar-box").toggleClass("active");
      $(".read-more").hide();
    });
+  $(".projects__more-span").click(function () {
+     $(".projects__table-wrapper").css("height","auto");
+     $(".projects__more-span").css("display","none");
+   });
      $(".owl-carousel").owlCarousel({
    		margin: 10,
     	nav: true,
