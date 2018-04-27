@@ -68,7 +68,6 @@ html {
 	margin: 0 auto;
 	max-width: 992px;
 	min-width: 320px;
-	padding: 0 0;
 	@include to1200 {
 		max-width:992px;
 	}
@@ -277,6 +276,9 @@ background-image: linear-gradient(to bottom, transparent, white);
 }
 .types-work {
 	padding: 76px 0 0 0;
+	&__container {
+		padding:0 23px;
+	}
 	&__text {
 		width: 50%;
 		@include to768 {
@@ -301,7 +303,8 @@ background-image: linear-gradient(to bottom, transparent, white);
 		font-size: 22px;
 		cursor: pointer;
 		@include to992 {
-			width: 242px;
+			width: 231px;
+			height: 180px;
 		}
 		@include to768 {
 			width: 100%;
@@ -450,6 +453,9 @@ background-image: linear-gradient(to bottom, transparent, white);
     	position: absolute;
     	right: -36px;
     	cursor: pointer;
+    	@include to992  {
+			right: -25px;
+    	}
     	@include to640 {
     		right: 10px;
 			top: 10px;
@@ -460,6 +466,7 @@ background-image: linear-gradient(to bottom, transparent, white);
 		justify-content: center;
 		align-items: center;
 		height: 100%;
+		padding:0 32px;
 		@include to480 {
 			padding: 0;
 		}
@@ -479,10 +486,15 @@ background-image: linear-gradient(to bottom, transparent, white);
     }
     &__description {
     	width: 60%;
-    	padding: 10px;
+    	padding: 60px 48px 60px 48px;
+    	overflow: auto;
+    	height: 100%;
+    	&::-webkit-scrollbar { width: 0;}
+    	-ms-overflow-style: none;
+    	overflow: -moz-scrollbars-none;
     	@include to640 {
     		width: 100%;
-    		height: 60%;
+    		padding: 40px 40px 40px 40px;
     	}
     }
     &__img {
@@ -498,70 +510,16 @@ background-image: linear-gradient(to bottom, transparent, white);
     		border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
     	}
+    	@include to480 {
+    		display: none;
+    	}
     }
     &__container-scroll {
-    	height: 100%!important;
+    	// overflow: auto;
+    	// height: 100%;
     }
-    .mCSB_scrollTools .mCSB_draggerRail {
-		background-color: #e5e5e5;
-	}
-	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-		background-color: #95e1d3!important;
-	}
 }
 .popup1.active,.popup2.active,.popup3.active {
 	display: block;
 }
 
-/* Reset Select */
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  background: #2c3e50;
-  background-image: none;
-}
-/* Custom Select */
-.select {
-  position: relative;
-  display: block;
-  width: 136px;
-  line-height: 3;
-  background: #2c3e50;
-  overflow: hidden;
-}
-select {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0 0 0 .5em;
-  color: #fff;
-  cursor: pointer;
-}
-select::-ms-expand {
-  display: none;
-}
-/* Arrow */
-.select::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0 1em;
-  background: #34495e;
-  pointer-events: none;
-}
-/* Transition */
-.select:hover::after {
-  color: #9AB999;
-}
-.select::after {
-  -webkit-transition: .25s all ease;
-  -o-transition: .25s all ease;
-  transition: .25s all ease;
-}

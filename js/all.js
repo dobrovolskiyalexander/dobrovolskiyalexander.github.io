@@ -23,7 +23,7 @@ $(document).ready(function() {
       loop:true,
       navText: ["<img src='images/prev-1.svg'>","<img src='images/next-1.svg'>"]
    });
-   $(".popup__container-scroll").mCustomScrollbar();
+   // $(".popup__container-scroll").mCustomScrollbar();
    var $hamburger = $(".hamburger");
    $hamburger.on("click", function(e) {
      $hamburger.toggleClass("is-active");
@@ -32,21 +32,27 @@ $(document).ready(function() {
    });
     $(".types-work__design").on("click", function(e) {
      $(".popup1").toggleClass("active");
+     $("html,body").css("overflow","hidden");
    });
     $(".popup__close1").on("click", function(e) {
      $(".popup1").toggleClass("active");
+     $("html,body").css("overflow","visible");
    });
     $(".types-work__building-reconstruction").on("click", function(e) {
      $(".popup2").toggleClass("active");
+     $("html,body").css("overflow","hidden");
    });
     $(".popup__close2").on("click", function(e) {
      $(".popup2").toggleClass("active");
+     $("html,body").css("overflow","visible");
    });
     $(".types-work__installation").on("click", function(e) {
      $(".popup3").toggleClass("active");
+     $("html,body").css("overflow","hidden");
    });
     $(".popup__close3").on("click", function(e) {
      $(".popup3").toggleClass("active");
+     $("html,body").css("overflow","visible");
    });
     $(".an").on("click","a", function (event) {
        event.preventDefault();

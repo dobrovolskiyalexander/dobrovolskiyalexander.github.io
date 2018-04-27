@@ -4276,8 +4276,7 @@ html {
 .container {
   margin: 0 auto;
   max-width: 992px;
-  min-width: 320px;
-  padding: 0 0; }
+  min-width: 320px; }
   @media only screen and (max-width: 1217px) {
     .container {
       max-width: 992px; } }
@@ -4481,6 +4480,8 @@ html {
 
 .types-work {
   padding: 76px 0 0 0; }
+  .types-work__container {
+    padding: 0 23px; }
   .types-work__text {
     width: 50%; }
     @media only screen and (max-width: 785px) {
@@ -4517,7 +4518,8 @@ html {
     cursor: pointer; }
     @media only screen and (max-width: 1009px) {
       .types-work__item {
-        width: 242px; } }
+        width: 231px;
+        height: 180px; } }
     @media only screen and (max-width: 785px) {
       .types-work__item {
         width: 100%;
@@ -4661,6 +4663,9 @@ html {
     position: absolute;
     right: -36px;
     cursor: pointer; }
+    @media only screen and (max-width: 1009px) {
+      .popup__close {
+        right: -25px; } }
     @media only screen and (max-width: 657px) {
       .popup__close {
         right: 10px;
@@ -4675,7 +4680,8 @@ html {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 100%; }
+    height: 100%;
+    padding: 0 32px; }
     @media only screen and (max-width: 497px) {
       .popup__container {
         padding: 0; } }
@@ -4698,11 +4704,17 @@ html {
         width: 100%; } }
   .popup__description {
     width: 60%;
-    padding: 10px; }
+    padding: 60px 48px 60px 48px;
+    overflow: auto;
+    height: 100%;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; }
+    .popup__description::-webkit-scrollbar {
+      width: 0; }
     @media only screen and (max-width: 657px) {
       .popup__description {
         width: 100%;
-        height: 60%; } }
+        padding: 40px 40px 40px 40px; } }
   .popup__img {
     background: url(../images/popur.png) no-repeat center center/cover;
     height: 100%;
@@ -4716,65 +4728,9 @@ html {
         height: 40%;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0; } }
-  .popup__container-scroll {
-    height: 100% !important; }
-  .popup .mCSB_scrollTools .mCSB_draggerRail {
-    background-color: #e5e5e5; }
-  .popup .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    background-color: #95e1d3 !important; }
+    @media only screen and (max-width: 497px) {
+      .popup__img {
+        display: none; } }
 
 .popup1.active, .popup2.active, .popup3.active {
   display: block; }
-
-/* Reset Select */
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: 0 !important;
-  background: #2c3e50;
-  background-image: none; }
-
-/* Custom Select */
-.select {
-  position: relative;
-  display: block;
-  width: 136px;
-  line-height: 3;
-  background: #2c3e50;
-  overflow: hidden; }
-
-select {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0 0 0 .5em;
-  color: #fff;
-  cursor: pointer; }
-
-select::-ms-expand {
-  display: none; }
-
-/* Arrow */
-.select::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0 1em;
-  background: #34495e;
-  pointer-events: none; }
-
-/* Transition */
-.select:hover::after {
-  color: #9AB999; }
-
-.select::after {
-  -webkit-transition: .25s all ease;
-  -o-transition: .25s all ease;
-  transition: .25s all ease; }
