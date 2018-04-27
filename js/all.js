@@ -76,6 +76,9 @@ $(document).ready(function() {
       nav.removeClass("f-nav");
     }
   });
+  $(".header__link_language").click(function () {
+     $(".header__drop").toggleClass("active");
+   });
 })
 
 

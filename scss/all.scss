@@ -14,6 +14,11 @@ html {
 * {
 	box-sizing: border-box;
 }
+body {
+	background-image: url("../images/bg-body.png");
+	background-position: -220% 86%;
+	background-repeat: no-repeat;
+}
 .clearfix::after {
     content: "";
     display: table;
@@ -114,10 +119,12 @@ background-color: #fff;
 	top:40px;
 	width: 100%;
 	z-index:1000;
+	padding: 10px 0;
 	&.f-nav {
 		position: fixed;
 		background-color: rgba(10, 10, 10, 0.89);
 		top:0;
+		padding:0;
 	}
 	@include to768 {
 		&.header_active {
@@ -152,7 +159,7 @@ background-color: #fff;
 		}
 	}
 	&__item {
-		padding: 10px 20px;
+		padding: 0 20px;
 		@include to992 {
 			padding: 10px 12px;
 		}
@@ -178,6 +185,9 @@ background-color: #fff;
   		img {
   			padding: 0 0 1px 0;
   		}
+  		&_language{
+
+  		}
 	}
 	&__hamburger {
 		outline: 0;
@@ -201,6 +211,23 @@ background-color: #fff;
 	}
 	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
 		background: #fff;
+	}
+	&__drop {
+		position: absolute;
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+	&__language {
+		position: relative;
+	}
+	&__drop-link {
+		font-size: 18px;
+  		font-weight: 300;
+  		color: #fff;
+  		padding: 10px 0 0 0;
+    	display: inline-block;
 	}
 }
 .banner {
