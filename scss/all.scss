@@ -486,7 +486,7 @@ background-image: linear-gradient(to bottom, transparent, white);
     }
     &__description {
     	width: 60%;
-    	padding: 60px 48px 60px 48px;
+    	padding: 32px 50px 32px 60px;
     	overflow: auto;
     	height: 100%;
     	&::-webkit-scrollbar { width: 0;}
@@ -494,7 +494,7 @@ background-image: linear-gradient(to bottom, transparent, white);
     	overflow: -moz-scrollbars-none;
     	@include to640 {
     		width: 100%;
-    		padding: 40px 40px 40px 40px;
+    		padding: 32px 40px 32px 40px;
     	}
     }
     &__img {

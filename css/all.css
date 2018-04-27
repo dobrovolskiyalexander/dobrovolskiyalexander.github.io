@@ -4704,7 +4704,7 @@ html {
         width: 100%; } }
   .popup__description {
     width: 60%;
-    padding: 60px 48px 60px 48px;
+    padding: 32px 50px 32px 60px;
     overflow: auto;
     height: 100%;
     -ms-overflow-style: none;
@@ -4714,7 +4714,7 @@ html {
     @media only screen and (max-width: 657px) {
       .popup__description {
         width: 100%;
-        padding: 40px 40px 40px 40px; } }
+        padding: 32px 40px 32px 40px; } }
   .popup__img {
     background: url(../images/popur.png) no-repeat center center/cover;
     height: 100%;
