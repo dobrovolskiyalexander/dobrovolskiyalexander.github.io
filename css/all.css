@@ -4375,7 +4375,7 @@ html {
     padding: 10px 20px; }
     @media only screen and (max-width: 1009px) {
       .header__item {
-        padding: 10px 14px; } }
+        padding: 10px 12px; } }
     @media only screen and (max-width: 785px) {
       .header__item {
         padding: 23px 20px;
