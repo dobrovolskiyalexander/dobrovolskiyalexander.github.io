@@ -36,11 +36,11 @@ $(document).ready(function() {
    });
     $(".types-work__design").on("click", function(e) {
      $(".popup1").toggleClass("active");
-     $("html,body").css("overflow","hidden");
+     $("html,body").css("position","fixed");
    });
     $(".popup__close1").on("click", function(e) {
      $(".popup1").toggleClass("active");
-     $("html,body").css("overflow","visible");
+     $("html,body").css("position","static");
    });
     $(".types-work__building-reconstruction").on("click", function(e) {
      $(".popup2").toggleClass("active");
