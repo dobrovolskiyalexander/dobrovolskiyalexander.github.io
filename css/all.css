@@ -4658,7 +4658,7 @@ body {
       -webkit-box-pack: end;
       -ms-flex-pack: end;
       justify-content: flex-end;
-      border-left: 1px solid #000; }
+      border-left: 1px solid #e9e9e9; }
       @media only screen and (max-width: 1009px) {
         .contacts__item:last-child {
           padding-left: 112px;
@@ -4680,7 +4680,7 @@ body {
           justify-content: flex-start;
           padding-left: 0;
           border-left: none;
-          border-top: 1px solid #000; } }
+          border-top: 1px solid #e9e9e9; } }
 
 .footer {
   padding: 76px 0 76px 0; }

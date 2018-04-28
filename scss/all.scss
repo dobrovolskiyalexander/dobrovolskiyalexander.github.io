@@ -474,7 +474,7 @@ background-color: #fff;
 		width: 50%;
 		&:last-child {
 			justify-content: flex-end;
-			border-left: 1px solid #000;
+			border-left: 1px solid #e9e9e9;
 			@include to992 {
 				padding-left: 112px;
 				justify-content: flex-start;
@@ -490,7 +490,7 @@ background-color: #fff;
 				justify-content: flex-start;
 				padding-left: 0;
 				border-left: none;
-				border-top: 1px solid #000;
+				border-top: 1px solid #e9e9e9;
 			}
 		}
 	}
