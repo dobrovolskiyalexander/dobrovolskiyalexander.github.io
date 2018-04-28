@@ -4735,7 +4735,7 @@ body {
     @media only screen and (max-width: 1009px) {
       .popup__close {
         right: -25px; } }
-    @media only screen and (max-width: 657px) {
+    @media only screen and (max-width: 785px) {
       .popup__close {
         right: 10px;
         top: 10px; } }
@@ -4751,7 +4751,7 @@ body {
     align-items: center;
     height: 100%;
     padding: 0 32px; }
-    @media only screen and (max-width: 497px) {
+    @media only screen and (max-width: 785px) {
       .popup__container {
         padding: 0; } }
   .popup__content {
@@ -4762,7 +4762,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     position: relative; }
-    @media only screen and (max-width: 657px) {
+    @media only screen and (max-width: 785px) {
       .popup__content {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;

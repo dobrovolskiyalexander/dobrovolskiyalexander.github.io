@@ -550,7 +550,7 @@ background-color: #fff;
     	@include to992  {
 			right: -25px;
     	}
-    	@include to640 {
+    	@include to768 {
     		right: 10px;
 			top: 10px;
     	}
@@ -561,7 +561,7 @@ background-color: #fff;
 		align-items: center;
 		height: 100%;
 		padding:0 32px;
-		@include to480 {
+		@include to768 {
 			padding: 0;
 		}
     }
@@ -571,7 +571,7 @@ background-color: #fff;
     	border-radius: 5px;
     	display: flex;
     	position: relative;
-    	@include to640 {
+    	@include to768 {
     		flex-direction: column-reverse;
     		border-radius: 0;
     		height: 100%;
