@@ -41,6 +41,10 @@ $(document).ready(function() {
     $(".popup__close1").on("click", function(e) {
      $(".popup1").toggleClass("active");
      $("html,body").css("position","static");
+     var top = $("#yak4").offset().top;
+     console.log(top);
+     $("html,body").scrollTop(top);
+
    });
     $(".types-work__building-reconstruction").on("click", function(e) {
      $(".popup2").toggleClass("active");
@@ -63,6 +67,7 @@ $(document).ready(function() {
        var id  = $(this).attr('href'),
            top = $(id).offset().top;
            top1 = top - $("div.header").height();
+           console.log(id);
        $('body,html').animate({scrollTop: top1}, 1500);
        $hamburger.removeClass("is-active");
        $(".header__nav").removeClass("nav_active");

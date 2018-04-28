@@ -4216,8 +4216,8 @@ a {
 
 html {
   font-family: 'Roboto', sans-serif;
-  position: relative;
-  z-index: -100; }
+  z-index: -100;
+  width: 100%; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -4226,7 +4226,8 @@ html {
 body {
   background-image: url("../images/bg-body.png");
   background-position: 838px 86%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  width: 100%; }
 
 .clearfix::after {
   content: "";
