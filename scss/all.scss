@@ -186,7 +186,12 @@ background-color: #fff;
   			padding: 0 0 1px 0;
   		}
   		&_language{
-
+			&.active {
+				img {
+					padding: 2px 0 0 0;
+					transform: rotate(180deg);
+				}
+			}
   		}
 	}
 	&__hamburger {
@@ -210,10 +215,11 @@ background-color: #fff;
 		}
 		@include to768 {
 			display: block;
-		}
-		@include to640 {
 			width: 45px;
 		}
+		// @include to640 {
+		// 	width: 45px;
+		// }
 
 	}
 	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
@@ -225,9 +231,28 @@ background-color: #fff;
 		&.active {
 			display: block;
 		}
+		@include to768 {
+			background-color: rgba(10, 10, 10, 0.93);
+			width: 100%;
+			left:0;
+			top: 101%;
+		}
 	}
 	&__language {
 		position: relative;
+	}
+	&__drop-item {
+		&:first-child{
+				border-top: 1px solid rgba(255, 255, 255, 0.23921568627450981);
+		}
+		@include to768 {
+			width: 100%;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.23921568627450981);
+			text-align: center;
+			&:first-child{
+				border-top: 1px solid rgba(255, 255, 255, 0.23921568627450981);
+			}
+		}
 	}
 	&__drop-link {
 		font-size: 18px;
@@ -235,6 +260,9 @@ background-color: #fff;
   		color: #fff;
   		padding: 10px 0 0 0;
     	display: inline-block;
+    	@include to768 {
+    		padding: 23px 20px;
+    	}
 	}
 }
 .banner {
@@ -557,7 +585,7 @@ background-color: #fff;
     	&::-webkit-scrollbar { width: 0;}
     	-ms-overflow-style: none;
     	overflow: -moz-scrollbars-none;
-    	@include to640 {
+    	@include to768 {
     		width: 100%;
     		padding: 32px 40px 32px 40px;
     	}
@@ -569,15 +597,18 @@ background-color: #fff;
 		border-top-right-radius: 5px;
 		border-bottom-right-radius: 5px;
 		overflow: hidden;
-		@include to640 {
-    		width: 100%;
-    		height: 40%;
-    		border-top-right-radius: 0;
-			border-bottom-right-radius: 0;
-    	}
-    	@include to480 {
-    		display: none;
-    	}
+		@include to768 {
+			display: none;
+		}
+		// @include to640 {
+  //   		width: 100%;
+  //   		height: 40%;
+  //   		border-top-right-radius: 0;
+		// 	border-bottom-right-radius: 0;
+  //   	}
+  //   	@include to480 {
+  //   		display: none;
+  //   	}
     }
     &__container-scroll {
     	// overflow: auto;

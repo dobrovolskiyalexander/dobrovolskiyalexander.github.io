@@ -78,6 +78,7 @@ $(document).ready(function() {
   });
   $(".header__link_language").click(function () {
      $(".header__drop").toggleClass("active");
+     $(".header__link_language").toggleClass("active");
    });
 })
 
