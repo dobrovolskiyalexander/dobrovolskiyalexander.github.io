@@ -4781,3 +4781,6 @@ body {
 
 .popup1.active, .popup2.active, .popup3.active {
   display: block; }
+
+.owl-prev, .owl-next {
+  cursor: pointer; }
