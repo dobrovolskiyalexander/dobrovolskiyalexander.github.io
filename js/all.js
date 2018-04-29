@@ -8,6 +8,9 @@ $(document).ready(function() {
      $(".projects__more-span").css("display","none");
    });
      $(".owl-carousel").owlCarousel({
+      autoplaySpeed: 1000,
+      autoplay: true,
+      autoplayTimeout: 2000, 
    		margin: 10,
     	nav: true,
     	dots:false,
@@ -41,26 +44,29 @@ $(document).ready(function() {
     $(".popup__close1").on("click", function(e) {
      $(".popup1").toggleClass("active");
      $("html,body").css("position","static");
-     var top = $("#yak4").offset().top;
-     console.log(top);
-     $("html,body").scrollTop(top);
+     var top1 = $("#yak4").offset().top;
+     $("html,body").scrollTop(top1);
 
    });
     $(".types-work__building-reconstruction").on("click", function(e) {
      $(".popup2").toggleClass("active");
-     $("html,body").css("overflow","hidden");
+     $("html,body").css("position","fixed");
    });
     $(".popup__close2").on("click", function(e) {
      $(".popup2").toggleClass("active");
-     $("html,body").css("overflow","visible");
+      $("html,body").css("position","static");
+     let top1 = $("#yak4").offset().top;
+     $("html,body").scrollTop(top1);
    });
     $(".types-work__installation").on("click", function(e) {
      $(".popup3").toggleClass("active");
-     $("html,body").css("overflow","hidden");
+     $("html,body").css("position","fixed");
    });
     $(".popup__close3").on("click", function(e) {
      $(".popup3").toggleClass("active");
-     $("html,body").css("overflow","visible");
+     $("html,body").css("position","static");
+     let top1 = $("#yak4").offset().top;
+     $("html,body").scrollTop(top1);
    });
     $(".an").on("click","a", function (event) {
        event.preventDefault();

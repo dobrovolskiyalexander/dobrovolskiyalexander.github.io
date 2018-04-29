@@ -4,12 +4,12 @@
 	}
 }
 @mixin to992  {
-	@media only screen and (max-width: 992px + 17px) {
+	@media only screen and (max-width:1042px + 17px) {
 		@content;
 	}
 }
 @mixin to768  {
-	@media only screen and (max-width: 768px + 17px) {
+	@media only screen and (max-width:818px + 17px) {
 		@content;
 	}
 }

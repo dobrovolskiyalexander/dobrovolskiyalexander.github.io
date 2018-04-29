@@ -71,10 +71,13 @@ body {
 	max-width: 992px;
 	min-width: 320px;
 	@include to1200 {
-		max-width:992px;
+		// max-width:992px;
+		max-width:1042px;
 	}
 	@include to992 {
-		max-width:768px;
+		// max-width:768px;
+		max-width:818px;
+		padding:0 23px;
 	}
 	@include to768 {
 		padding:0 23px;
@@ -574,10 +577,13 @@ background-color: #fff;
     	display: flex;
     	position: relative;
     	@include to768 {
-    		flex-direction: column-reverse;
+    		// flex-direction: column-reverse;
+    		// justify-content: flex-end;
     		border-radius: 0;
     		height: 100%;
     		width: 100%;
+    		overflow: auto;
+    		flex-wrap: wrap;
     	}
     }
     &__description {
@@ -590,7 +596,10 @@ background-color: #fff;
     	overflow: -moz-scrollbars-none;
     	@include to768 {
     		width: 100%;
+    		height: auto;
     		padding: 32px 40px 32px 40px;
+    		overflow: visible;
+    		order: 5;
     	}
     }
     &__img {
@@ -601,14 +610,12 @@ background-color: #fff;
 		border-bottom-right-radius: 5px;
 		overflow: hidden;
 		@include to768 {
-			display: none;
-		}
-		// @include to640 {
-  //   		width: 100%;
-  //   		height: 40%;
-  //   		border-top-right-radius: 0;
-		// 	border-bottom-right-radius: 0;
-  //   	}
+			height: 278px;
+    		width: 100%;
+    		overflow: visible;
+    		border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+    	}
   //   	@include to480 {
   //   		display: none;
   //   	}
@@ -623,5 +630,33 @@ background-color: #fff;
 }
 .owl-prev,.owl-next {
 	cursor: pointer;
+}
+.main-video {
+	position: relative;
+    width: 100%;
+    height: auto;
+    // max-height: 450px;
+    overflow: hidden;
+    height: 40vw;
+}
+.main-video__video {
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    visibility: visible;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+video {
+    display: inline-block;
+    vertical-align: baseline;
 }
 
