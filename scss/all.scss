@@ -357,12 +357,13 @@ background-color: #fff;
 		position: absolute;
 		top:calc(50% - 11px);
 		z-index:100000;
+		padding: 30px;
 	}
 	.owl-prev {
-		left: -20px;
+		left: -52px;
 	}
 	.owl-next {
-		right: -20px;
+		right: -52px;
 	}
 }
 .types-work {
@@ -574,6 +575,7 @@ box-shadow: 0px 0px 36px -3px rgba(0,0,0,0.75);
     	position: absolute;
     	right: -36px;
     	cursor: pointer;
+    	padding: 10px;
     	@include to992  {
 			right: -25px;
     	}
@@ -620,7 +622,6 @@ box-shadow: 0px 0px 36px -3px rgba(0,0,0,0.75);
     	@include to768 {
     		width: 100%;
     		height: auto;
-    		padding: 32px 40px 32px 40px;
     		overflow: visible;
     		order: 5;
     	}
@@ -668,6 +669,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faf8f7', end
     	-ms-overflow-style: none;
     	overflow: -moz-scrollbars-none;
     	height: 100%;
+    	@include to768 {
+    		padding: 32px 40px 32px 40px;
+    	}
     }
 }
 .popup1.active,.popup2.active,.popup3.active {

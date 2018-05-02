@@ -92,7 +92,7 @@ $(document).ready(function() {
      $(".header__link_language").toggleClass("active");
    });
   setTimeout(function() { $('.a1').addClass('animated fadeInRightBig block'); }, 100);
-  
+
 })
 
 

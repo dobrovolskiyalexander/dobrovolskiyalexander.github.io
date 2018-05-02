@@ -4533,11 +4533,12 @@ body {
   .why-we .owl-prev, .why-we .owl-next {
     position: absolute;
     top: calc(50% - 11px);
-    z-index: 100000; }
+    z-index: 100000;
+    padding: 30px; }
   .why-we .owl-prev {
-    left: -20px; }
+    left: -52px; }
   .why-we .owl-next {
-    right: -20px; }
+    right: -52px; }
 
 .types-work {
   padding: 76px 0 0 0; }
@@ -4748,7 +4749,8 @@ body {
   .popup__close {
     position: absolute;
     right: -36px;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 10px; }
     @media only screen and (max-width: 1059px) {
       .popup__close {
         right: -25px; } }
@@ -4796,7 +4798,6 @@ body {
       .popup__description {
         width: 100%;
         height: auto;
-        padding: 32px 40px 32px 40px;
         overflow: visible;
         -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
@@ -4839,6 +4840,9 @@ body {
     height: 100%; }
     .popup__container-scroll::-webkit-scrollbar {
       width: 0; }
+    @media only screen and (max-width: 835px) {
+      .popup__container-scroll {
+        padding: 32px 40px 32px 40px; } }
 
 .popup1.active, .popup2.active, .popup3.active {
   display: block; }
