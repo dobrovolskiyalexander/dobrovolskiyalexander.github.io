@@ -4326,7 +4326,7 @@ body {
   top: 40px;
   width: 100%;
   z-index: 1000;
-  padding: 10px 0; }
+  padding-right: 25px; }
   .header.f-nav {
     position: fixed;
     background-color: #242424;
@@ -4335,8 +4335,10 @@ body {
     .header.f-nav .header__drop {
       background-color: #242424; }
   @media only screen and (max-width: 835px) {
-    .header.header_active {
-      background-color: #242424; } }
+    .header {
+      padding: 0; }
+      .header.header_active {
+        background-color: #242424; } }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
