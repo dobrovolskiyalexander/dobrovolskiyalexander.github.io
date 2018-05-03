@@ -91,7 +91,7 @@ $(document).ready(function() {
      $(".header__drop").toggleClass("active");
      $(".header__link_language").toggleClass("active");
    });
-  setTimeout(function() { $('.a1').addClass('animated fadeInRightBig block'); }, 100);
+  setTimeout(function() { $('.a1').addClass('animated fadeInUp block'); }, 300);
 
 })
 

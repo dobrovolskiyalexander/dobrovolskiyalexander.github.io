@@ -4227,7 +4227,8 @@ body {
   background-image: url("../images/bg-body.png");
   background-position: 838px 86%;
   background-repeat: no-repeat;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
 
 .clearfix::after {
   content: "";
@@ -4471,8 +4472,7 @@ body {
         padding: 23px 20px; } }
 
 .banner {
-  background: url(../images/bg-banner.png) no-repeat center center/cover;
-  padding: 30px 0; }
+  background: url(../images/bg-banner.png) no-repeat center center/cover; }
   .banner__container {
     display: -webkit-box;
     display: -ms-flexbox;
