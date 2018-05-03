@@ -19,7 +19,6 @@ body {
 	background-position: 838px 86%;
 	background-repeat: no-repeat;
 	width: 100%;
-	overflow-x: hidden;
 }
 .clearfix::after {
     content: "";
@@ -356,13 +355,12 @@ background-color: #fff;
 		position: absolute;
 		top:calc(50% - 11px);
 		z-index:100000;
-		padding: 30px;
 	}
 	.owl-prev {
-		left: -52px;
+		left: -23px;
 	}
 	.owl-next {
-		right: -52px;
+		right: -23px;
 	}
 }
 .types-work {
