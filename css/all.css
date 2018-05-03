@@ -4751,7 +4751,7 @@ body {
     padding: 10px; }
     @media only screen and (max-width: 1117px) {
       .popup__close {
-        right: -25px; } }
+        right: -33px; } }
     @media only screen and (max-width: 835px) {
       .popup__close {
         right: 10px;
