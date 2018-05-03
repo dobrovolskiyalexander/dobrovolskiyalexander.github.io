@@ -4430,7 +4430,7 @@ body {
     padding: 0 15px; }
     @media only screen and (max-width: 835px) {
       .header__call-back {
-        display: block; } }
+        display: inline; } }
   .header__wrapper-logo {
     display: none; }
     .header__wrapper-logo img {

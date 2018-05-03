@@ -227,7 +227,7 @@ background-color: #fff;
 		display: none;
 		padding:0 15px;
 		@include to768 {
-			display: block;
+			display: inline;
 		}
 	}
 	&__wrapper-logo {
