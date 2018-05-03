@@ -4427,7 +4427,8 @@ body {
         display: block; } }
   .header__call-back {
     display: none;
-    padding: 0 15px; }
+    padding: 0 15px;
+    background-color: red; }
     @media only screen and (max-width: 835px) {
       .header__call-back {
         display: inline; } }

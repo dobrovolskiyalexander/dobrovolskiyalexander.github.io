@@ -226,6 +226,7 @@ background-color: #fff;
 	&__call-back {
 		display: none;
 		padding:0 15px;
+		background-color: red;
 		@include to768 {
 			display: inline;
 		}
